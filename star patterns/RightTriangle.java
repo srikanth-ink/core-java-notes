@@ -1,6 +1,21 @@
+/*
+
+SAMPLE OUTUT:
+
+input = 5
+
+
+*
+**
+***
+****
+*****
+
+*/
+
 import java.util.Scanner;
 
-public class RightAngleTriangle {
+public class RightTriangle {
   public static void main(String[] args) {
 
     // take the number of rows as input
@@ -8,14 +23,13 @@ public class RightAngleTriangle {
     int n = sc.nextInt();
     sc.close();
 
-    // outer loop to enter every row
+    // outer loop to iterate through each row
     for (int i = 0; i < n; i++) {
-      // inner loop to enter every column
-      // print stars based on the current row number
+      // inner loop to print stars based on the current row number
       for (int j = 0; j <= i; j++) {
         System.out.print("*");
       }
-      // move to the next line when a row iteration is completed
+      // move to the next line after finishing a row
       System.out.println();
     }
   }
