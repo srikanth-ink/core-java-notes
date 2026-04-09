@@ -31,5 +31,6 @@ public class NumberRightTriangle {
       // move to the next line when finished a row
       System.out.println();
     }
+    sc.close();
   }
 }
