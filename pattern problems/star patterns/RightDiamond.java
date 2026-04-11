@@ -18,7 +18,7 @@ sample output:
 
 import java.util.Scanner;
 
-public class LeftDiamond {
+public class RightDiamond {
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
