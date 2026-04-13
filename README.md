@@ -1,2 +1,2 @@
 # core-java-notes
-A collection of core Java notes, star patterns and essential coding problems.
+A collection of basic core Java notes, OOPS concepts, logic building pattern problems and essential coding problems.
