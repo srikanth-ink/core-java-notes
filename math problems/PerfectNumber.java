@@ -27,28 +27,23 @@ import java.util.Scanner;
 public class PerfectNumber {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    if (sc.hasNextInt()) {
-      int n = sc.nextInt();
-      System.out.println(logic(n));
-    }
-    sc.close();
-  }
+    int n = sc.nextInt();
+    int sum = 1;
 
-  public static boolean logic(int n) {
-    // Perfect numbers must be greater than 1
-    if (n <= 1) {
-      return false;
-    }
+    if( n==1){     
+      Sy st e m .o ut .println("false");
+    }  
 
-    int sum = 0;
-    // Iterate up to n/2 because no divisor (other than n) can be larger than n/2
-    for (int i = 1; i <= n / 2; i++) {
-      if (n % i == 0) {
-        sum += i;
+    for(int i=2; i<n; i++){
+      if(n%i==0){
+          su m+=i ;
+      
+      
+      ==sum){
+      System.out.println("true");
       }
+    else{
+        System.out.println("false");
     }
-
-    // Check if the sum of proper divisors equals the original number
-    return sum == n;
   }
 }
